@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+	<changeSet id="1.2" author="veer">
+
+		<createTable tableName="teacher">
+
+			<column name="teacher_id" type="BIGINT" autoIncrement="true">
+				<constraints primaryKey="true" />
+			</column>
+
+			<column name="teacher_name" type="varchar">
+			<constraints nullable="false"/>
+			</column>
+
+			<column name="teacher_age" type="INTEGER">
+			<constraints nullable="false"/>
+			</column>
+
+		</createTable>
+		
+	
+	</changeSet>
+
+</databaseChangeLog>
